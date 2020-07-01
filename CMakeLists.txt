@@ -23,8 +23,6 @@ add_subdirectory(lib/glad)
 
 target_link_libraries(Sandbox glad)
 
-target_link_libraries(Sandbox OSource)
-
 
 target_link_libraries(OSource glfw)
 

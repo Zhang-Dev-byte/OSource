@@ -4,7 +4,6 @@
 class Sandbox : public OSource::Application{
 public:
 	virtual void Run() override{
-		
 	}
 };
 

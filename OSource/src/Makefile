@@ -214,6 +214,33 @@ Application.cpp.s:
 	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
+OSource/Log.obj: OSource/Log.cpp.obj
+
+.PHONY : OSource/Log.obj
+
+# target to build an object file
+OSource/Log.cpp.obj:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Log.cpp.obj
+.PHONY : OSource/Log.cpp.obj
+
+OSource/Log.i: OSource/Log.cpp.i
+
+.PHONY : OSource/Log.i
+
+# target to preprocess a source file
+OSource/Log.cpp.i:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Log.cpp.i
+.PHONY : OSource/Log.cpp.i
+
+OSource/Log.s: OSource/Log.cpp.s
+
+.PHONY : OSource/Log.s
+
+# target to generate assembly for a file
+OSource/Log.cpp.s:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Log.cpp.s
+.PHONY : OSource/Log.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -230,6 +257,9 @@ help:
 	@echo ... Application.obj
 	@echo ... Application.i
 	@echo ... Application.s
+	@echo ... OSource/Log.obj
+	@echo ... OSource/Log.i
+	@echo ... OSource/Log.s
 .PHONY : help
 
 

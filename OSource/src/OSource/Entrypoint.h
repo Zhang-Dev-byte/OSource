@@ -1,6 +1,6 @@
 #pragma once
 #include "Application.h"
-#include "Log.cpp"
+#include "Log.h"
 
 namespace OSource{
     extern Application* CreateApplication();

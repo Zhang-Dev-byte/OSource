@@ -6,3 +6,5 @@ file(GLOB SRC
 )
 
 add_executable(Sandbox ${SRC})
+
+target_link_libraries(Sandbox OSource)

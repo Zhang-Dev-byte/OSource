@@ -19,6 +19,6 @@ void OSource::Log::Init()
 	s_ClientLogger->set_level(spdlog::level::trace);
 }
 
-inline std::shared_ptr<spdlog::logger>& OSource::Log::GetCoreLogger() { return s_CoreLogger; }
-inline std::shared_ptr<spdlog::logger>& OSource::Log::GetClientLogger() { return s_ClientLogger; }
+std::shared_ptr<spdlog::logger>& OSource::Log::GetCoreLogger() { return s_CoreLogger; }
+std::shared_ptr<spdlog::logger>& OSource::Log::GetClientLogger() { return s_ClientLogger; }
     
