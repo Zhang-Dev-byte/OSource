@@ -192,12 +192,12 @@ OSource/src/CMakeFiles/OSource.dir/all: lib/glad/CMakeFiles/glad.dir/all
 OSource/src/CMakeFiles/OSource.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/depend
 	$(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=1,2,3 "Built target OSource"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=1,2,3,4,5 "Built target OSource"
 .PHONY : OSource/src/CMakeFiles/OSource.dir/all
 
 # Build rule for subdir invocation for target.
 OSource/src/CMakeFiles/OSource.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\OSourceEngine\CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OSourceEngine\CMakeFiles 25
 	$(MAKE) -f CMakeFiles\Makefile2 OSource/src/CMakeFiles/OSource.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\OSourceEngine\CMakeFiles 0
 .PHONY : OSource/src/CMakeFiles/OSource.dir/rule
@@ -216,17 +216,17 @@ OSource/src/CMakeFiles/OSource.dir/clean:
 # Target rules for target Sandbox/src/CMakeFiles/Sandbox.dir
 
 # All Build rule for target.
-Sandbox/src/CMakeFiles/Sandbox.dir/all: OSource/src/CMakeFiles/OSource.dir/all
 Sandbox/src/CMakeFiles/Sandbox.dir/all: lib/glad/CMakeFiles/glad.dir/all
 Sandbox/src/CMakeFiles/Sandbox.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
+Sandbox/src/CMakeFiles/Sandbox.dir/all: OSource/src/CMakeFiles/OSource.dir/all
 	$(MAKE) -f Sandbox\src\CMakeFiles\Sandbox.dir\build.make Sandbox/src/CMakeFiles/Sandbox.dir/depend
 	$(MAKE) -f Sandbox\src\CMakeFiles\Sandbox.dir\build.make Sandbox/src/CMakeFiles/Sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=4,5 "Built target Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=6,7 "Built target Sandbox"
 .PHONY : Sandbox/src/CMakeFiles/Sandbox.dir/all
 
 # Build rule for subdir invocation for target.
 Sandbox/src/CMakeFiles/Sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\OSourceEngine\CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\OSourceEngine\CMakeFiles 27
 	$(MAKE) -f CMakeFiles\Makefile2 Sandbox/src/CMakeFiles/Sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\OSourceEngine\CMakeFiles 0
 .PHONY : Sandbox/src/CMakeFiles/Sandbox.dir/rule
@@ -275,7 +275,7 @@ lib/glfw/CMakeFiles/uninstall.dir/clean:
 lib/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f lib\glfw\src\CMakeFiles\glfw.dir\build.make lib/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f lib\glfw\src\CMakeFiles\glfw.dir\build.make lib/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target glfw"
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -302,7 +302,7 @@ lib/glfw/src/CMakeFiles/glfw.dir/clean:
 lib/glad/CMakeFiles/glad-generate-files.dir/all:
 	$(MAKE) -f lib\glad\CMakeFiles\glad-generate-files.dir\build.make lib/glad/CMakeFiles/glad-generate-files.dir/depend
 	$(MAKE) -f lib\glad\CMakeFiles\glad-generate-files.dir\build.make lib/glad/CMakeFiles/glad-generate-files.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=9 "Built target glad-generate-files"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=11 "Built target glad-generate-files"
 .PHONY : lib/glad/CMakeFiles/glad-generate-files.dir/all
 
 # Build rule for subdir invocation for target.
@@ -329,7 +329,7 @@ lib/glad/CMakeFiles/glad-generate-files.dir/clean:
 lib/glad/CMakeFiles/glad.dir/all: lib/glad/CMakeFiles/glad-generate-files.dir/all
 	$(MAKE) -f lib\glad\CMakeFiles\glad.dir\build.make lib/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) -f lib\glad\CMakeFiles\glad.dir\build.make lib/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=6,7,8 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=8,9,10 "Built target glad"
 .PHONY : lib/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.

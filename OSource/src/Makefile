@@ -241,6 +241,60 @@ OSource/Log.cpp.s:
 	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Log.cpp.s
 .PHONY : OSource/Log.cpp.s
 
+OSource/Shader.obj: OSource/Shader.cpp.obj
+
+.PHONY : OSource/Shader.obj
+
+# target to build an object file
+OSource/Shader.cpp.obj:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Shader.cpp.obj
+.PHONY : OSource/Shader.cpp.obj
+
+OSource/Shader.i: OSource/Shader.cpp.i
+
+.PHONY : OSource/Shader.i
+
+# target to preprocess a source file
+OSource/Shader.cpp.i:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Shader.cpp.i
+.PHONY : OSource/Shader.cpp.i
+
+OSource/Shader.s: OSource/Shader.cpp.s
+
+.PHONY : OSource/Shader.s
+
+# target to generate assembly for a file
+OSource/Shader.cpp.s:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Shader.cpp.s
+.PHONY : OSource/Shader.cpp.s
+
+OSource/Texture.obj: OSource/Texture.cpp.obj
+
+.PHONY : OSource/Texture.obj
+
+# target to build an object file
+OSource/Texture.cpp.obj:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Texture.cpp.obj
+.PHONY : OSource/Texture.cpp.obj
+
+OSource/Texture.i: OSource/Texture.cpp.i
+
+.PHONY : OSource/Texture.i
+
+# target to preprocess a source file
+OSource/Texture.cpp.i:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Texture.cpp.i
+.PHONY : OSource/Texture.cpp.i
+
+OSource/Texture.s: OSource/Texture.cpp.s
+
+.PHONY : OSource/Texture.s
+
+# target to generate assembly for a file
+OSource/Texture.cpp.s:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/Texture.cpp.s
+.PHONY : OSource/Texture.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -260,6 +314,12 @@ help:
 	@echo ... OSource/Log.obj
 	@echo ... OSource/Log.i
 	@echo ... OSource/Log.s
+	@echo ... OSource/Shader.obj
+	@echo ... OSource/Shader.i
+	@echo ... OSource/Shader.s
+	@echo ... OSource/Texture.obj
+	@echo ... OSource/Texture.i
+	@echo ... OSource/Texture.s
 .PHONY : help
 
 
