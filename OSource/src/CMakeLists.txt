@@ -6,7 +6,6 @@ file(GLOB SRC
 	"OSource/**.h"
     "OSource/**.cpp"
 )
-
 add_library(OSource STATIC 
 			${SRC})
 

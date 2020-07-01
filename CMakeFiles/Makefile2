@@ -188,8 +188,8 @@ lib/glfw/src/clean: lib/glfw/src/CMakeFiles/glfw.dir/clean
 # Target rules for target OSource/src/CMakeFiles/OSource.dir
 
 # All Build rule for target.
-OSource/src/CMakeFiles/OSource.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 OSource/src/CMakeFiles/OSource.dir/all: lib/glad/CMakeFiles/glad.dir/all
+OSource/src/CMakeFiles/OSource.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/depend
 	$(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=1,2,3 "Built target OSource"
@@ -216,9 +216,9 @@ OSource/src/CMakeFiles/OSource.dir/clean:
 # Target rules for target Sandbox/src/CMakeFiles/Sandbox.dir
 
 # All Build rule for target.
-Sandbox/src/CMakeFiles/Sandbox.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 Sandbox/src/CMakeFiles/Sandbox.dir/all: OSource/src/CMakeFiles/OSource.dir/all
 Sandbox/src/CMakeFiles/Sandbox.dir/all: lib/glad/CMakeFiles/glad.dir/all
+Sandbox/src/CMakeFiles/Sandbox.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f Sandbox\src\CMakeFiles\Sandbox.dir\build.make Sandbox/src/CMakeFiles/Sandbox.dir/depend
 	$(MAKE) -f Sandbox\src\CMakeFiles\Sandbox.dir\build.make Sandbox/src/CMakeFiles/Sandbox.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\OSourceEngine\CMakeFiles --progress-num=4,5 "Built target Sandbox"

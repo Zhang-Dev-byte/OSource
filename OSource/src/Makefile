@@ -187,32 +187,32 @@ OSource/fast:
 	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/build
 .PHONY : OSource/fast
 
-Application.obj: Application.cpp.obj
+OSource/InputManager.obj: OSource/InputManager.cpp.obj
 
-.PHONY : Application.obj
+.PHONY : OSource/InputManager.obj
 
 # target to build an object file
-Application.cpp.obj:
-	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/Application.cpp.obj
-.PHONY : Application.cpp.obj
+OSource/InputManager.cpp.obj:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/InputManager.cpp.obj
+.PHONY : OSource/InputManager.cpp.obj
 
-Application.i: Application.cpp.i
+OSource/InputManager.i: OSource/InputManager.cpp.i
 
-.PHONY : Application.i
+.PHONY : OSource/InputManager.i
 
 # target to preprocess a source file
-Application.cpp.i:
-	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/Application.cpp.i
-.PHONY : Application.cpp.i
+OSource/InputManager.cpp.i:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/InputManager.cpp.i
+.PHONY : OSource/InputManager.cpp.i
 
-Application.s: Application.cpp.s
+OSource/InputManager.s: OSource/InputManager.cpp.s
 
-.PHONY : Application.s
+.PHONY : OSource/InputManager.s
 
 # target to generate assembly for a file
-Application.cpp.s:
-	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/Application.cpp.s
-.PHONY : Application.cpp.s
+OSource/InputManager.cpp.s:
+	cd /d C:\OSourceEngine && $(MAKE) -f OSource\src\CMakeFiles\OSource.dir\build.make OSource/src/CMakeFiles/OSource.dir/OSource/InputManager.cpp.s
+.PHONY : OSource/InputManager.cpp.s
 
 OSource/Log.obj: OSource/Log.cpp.obj
 
@@ -254,9 +254,9 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... OSource
-	@echo ... Application.obj
-	@echo ... Application.i
-	@echo ... Application.s
+	@echo ... OSource/InputManager.obj
+	@echo ... OSource/InputManager.i
+	@echo ... OSource/InputManager.s
 	@echo ... OSource/Log.obj
 	@echo ... OSource/Log.i
 	@echo ... OSource/Log.s

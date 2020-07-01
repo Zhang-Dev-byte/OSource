@@ -299,6 +299,10 @@ CMAKE_STRIP:FILEPATH=C:/TDM-GCC-64/bin/strip.exe
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 
+//Target C++ version to compile for when building binaries (C++11,
+// C++17)
+CPP_VERSION:STRING=C++17
+
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=C:/Program Files/doxygen/bin/doxygen.exe
 
@@ -390,6 +394,9 @@ Project_BINARY_DIR:STATIC=C:/OSourceEngine
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=C:/OSourceEngine
+
+//Target platform to compile for when building binaries (x86, x64)
+SOL2_PLATFORM:STRING=x64
 
 //Value Computed by CMake
 Sandbox_BINARY_DIR:STATIC=C:/OSourceEngine
