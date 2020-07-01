@@ -9,7 +9,7 @@
 *.internal
 *.rsp
 *.marks
-#.bin
+*.bin
 
 #CMake
 
