@@ -5,5 +5,6 @@ namespace OSource{
     public:
         virtual void Run() = 0;
         virtual void HandleInput(OSource::Input& input) = 0;
+        virtual void Render() = 0;
     };
 }
