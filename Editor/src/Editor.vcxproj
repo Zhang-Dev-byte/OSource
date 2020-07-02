@@ -312,7 +312,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\OSourceEngine\Editor\src\SandboxLayer.h" />
+    <ClInclude Include="EditorLayer.h" />
     <ClCompile Include="C:\OSourceEngine\Editor\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
