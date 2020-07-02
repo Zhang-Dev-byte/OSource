@@ -3,13 +3,31 @@
 #include <GLFW/glfw3.h>
 #include "Application.h"
 #include "Log.h"
+#include "Layer.h"
 #include "InputManager.h"
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
+#include <vector>
 
 namespace OSource{
     extern Application* CreateApplication();
+    extern std::vector<Layer*> layers = std::vector<Layer*>();
+    extern void AddLayer(Layer* layer) {
+        layers.push_back(layer);
+    }
+    extern void RunLayers() {
+        for (auto i = layers.begin(); i != layers.end(); i++) {
+            auto layer = *i;
+            layer->OnRun();
+        }
+    }
+    extern void RenderLayers() {
+        for (auto i = layers.begin(); i != layers.end(); i++) {
+            auto layer = *i;
+            layer->OnRender();
+        }
+    }
 }
 
 void ResizeCallback(GLFWwindow* window, int width, int height){
@@ -53,6 +71,7 @@ int main(){
 
     auto app = OSource::CreateApplication();
     app->Run();
+    OSource::RunLayers();
 
     glEnable(GL_TEXTURE_2D);
 
@@ -67,6 +86,11 @@ int main(){
     while(!glfwWindowShouldClose(window))
     {
         app->HandleInput(input);
+        for (auto i = OSource::layers.begin(); i != OSource::layers.end(); i++) {
+            auto layer = *i;
+            layer->HandleInput(input);
+        }
+
         glClearColor(1, 0, 0, 1);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -75,6 +99,7 @@ int main(){
         ImGui::NewFrame();
 
         app->Render();
+        OSource::RenderLayers();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

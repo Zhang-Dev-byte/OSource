@@ -294,6 +294,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_rectpack.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_textedit.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_truetype.h" />
+    <ClInclude Include="OSource\Layer.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\OSourceEngine\ZERO_CHECK.vcxproj">

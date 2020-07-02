@@ -13,4 +13,7 @@
       <UniqueIdentifier>{65CD4A5F-789D-355A-A769-09DFC6F7A792}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SandboxLayer.h" />
+  </ItemGroup>
 </Project>
