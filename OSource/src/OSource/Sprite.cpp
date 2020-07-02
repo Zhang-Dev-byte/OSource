@@ -53,11 +53,12 @@ namespace OSource {
 
         glBindVertexArray(0);
     }
-    void Sprite::Render()
+    void Sprite::Render(Camera& cam)
     {
         shader.Use();
         shader.SetInt("t", tex.getID());
         shader.SetMatrix4f("model", model);
+        shader.SetMatrix4f("vp", cam.GetProjectionView());
         tex.Bind();
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

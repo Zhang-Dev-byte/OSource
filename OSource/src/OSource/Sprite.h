@@ -2,6 +2,7 @@
 #include "Shader.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "Texture.h"
+#include "Camera.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -11,7 +12,7 @@ namespace OSource {
     class Sprite {
     public:
         Sprite(Texture& texture, const char* name);
-        void Render();
+        void Render(Camera& cam);
         void UpdateModel();
         void SetScale(vec2& value);
         void SetPosition(vec2& value);

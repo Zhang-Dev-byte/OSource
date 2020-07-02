@@ -14,6 +14,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OSource\Sprite.cpp" />
+    <ClCompile Include="OSource\Camera.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource.h">
@@ -41,6 +42,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="OSource\Sprite.h" />
+    <ClInclude Include="OSource\Camera.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\OSourceEngine\OSource\src\CMakeLists.txt" />
