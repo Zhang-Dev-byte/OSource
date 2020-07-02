@@ -169,6 +169,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\OSourceEngine\Editor\src\Editor.vcxproj">
+      <Project>{1796B40E-60A3-3087-BA39-AC069BB7DDD9}</Project>
+      <Name>Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\OSourceEngine\OSource\src\OSource.vcxproj">
       <Project>{59F0CDD4-2E01-38E1-B4FC-37210C048563}</Project>
       <Name>OSource</Name>

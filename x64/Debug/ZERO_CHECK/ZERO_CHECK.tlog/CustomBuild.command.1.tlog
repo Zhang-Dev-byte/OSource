@@ -1,6 +1,6 @@
 ^C:\OSOURCEENGINE\CMAKEFILES\79545E6D2D17226AAFFB9713088CD9E9\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/OSourceEngine -BC:/OSourceEngine --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/OSourceEngine/Sandbox.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/OSourceEngine -BC:/OSourceEngine --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/OSourceEngine/Editor.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

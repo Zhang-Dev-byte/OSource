@@ -6,14 +6,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\OSourceEngine\Sandbox\src\SandboxLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\OSourceEngine\Sandbox\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E2BD74C-A566-356B-98C0-80EE80BFF3FA}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{65CD4A5F-789D-355A-A769-09DFC6F7A792}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SandboxLayer.h" />
   </ItemGroup>
 </Project>

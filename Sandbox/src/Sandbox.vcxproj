@@ -312,6 +312,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\OSourceEngine\Sandbox\src\SandboxLayer.h" />
     <ClCompile Include="C:\OSourceEngine\Sandbox\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -333,9 +334,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{E5F4B32B-828C-377B-9BC0-F2B07CB83487}</Project>
       <Name>glfw</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SandboxLayer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

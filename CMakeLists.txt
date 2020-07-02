@@ -31,3 +31,29 @@ target_include_directories(Sandbox PRIVATE ${PROJECT_SOURCE_DIR}/lib/spdlog/incl
 
 target_include_directories(Sandbox PRIVATE ${PROJECT_SOURCE_DIR}/lib/glm)
 
+
+project(Editor)
+add_subdirectory(Editor/src/)
+
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+
+set_target_properties( Editor PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/${CMAKE_PROJECT_NAME} )
+
+target_link_libraries(Editor glfw)
+
+target_link_libraries(Editor glad)
+
+
+target_link_libraries(OSource glfw)
+
+target_link_libraries(OSource glad)
+
+
+target_include_directories(Editor PRIVATE ${PROJECT_SOURCE_DIR}/OSource/src)
+
+target_include_directories(Editor PRIVATE ${PROJECT_SOURCE_DIR}/lib/spdlog/include)
+
+target_include_directories(Editor PRIVATE ${PROJECT_SOURCE_DIR}/lib/glm)
+

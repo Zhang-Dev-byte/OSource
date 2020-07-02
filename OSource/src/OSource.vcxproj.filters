@@ -54,6 +54,9 @@
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\InputManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -93,7 +96,6 @@
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OSource\Layer.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\OSourceEngine\OSource\src\CMakeLists.txt" />

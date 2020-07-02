@@ -3,6 +3,7 @@ C:/OSourceEngine/CMakeFiles/ALL_BUILD.dir
 C:/OSourceEngine/CMakeFiles/ZERO_CHECK.dir
 C:/OSourceEngine/OSource/src/CMakeFiles/OSource.dir
 C:/OSourceEngine/OSource/src/CMakeFiles/INSTALL.dir
+C:/OSourceEngine/OSource/src/CMakeFiles/ALL_BUILD.dir
 C:/OSourceEngine/Sandbox/src/CMakeFiles/Sandbox.dir
 C:/OSourceEngine/Sandbox/src/CMakeFiles/INSTALL.dir
 C:/OSourceEngine/lib/glfw/CMakeFiles/uninstall.dir
@@ -14,3 +15,5 @@ C:/OSourceEngine/lib/glad/CMakeFiles/glad-generate-files.dir
 C:/OSourceEngine/lib/glad/CMakeFiles/glad.dir
 C:/OSourceEngine/lib/glad/CMakeFiles/INSTALL.dir
 C:/OSourceEngine/lib/glad/CMakeFiles/ALL_BUILD.dir
+C:/OSourceEngine/Editor/src/CMakeFiles/INSTALL.dir
+C:/OSourceEngine/Editor/src/CMakeFiles/Editor.dir
