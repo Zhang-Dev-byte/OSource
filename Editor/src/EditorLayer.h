@@ -24,7 +24,6 @@ namespace EditorGL {
 		if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 			OS_CORE_ERROR("Framebuffer is not complete!");
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
-		OS_CORE_INFO(TCB);
 	}
 	extern void Bindframebuffer() {
 		glBindFramebuffer(GL_FRAMEBUFFER, FBO);
@@ -53,6 +52,8 @@ public:
 		EditorGL::Unbindframebuffer();
 		glClearColor(1, 0, 0, 1);
 		glClear(GL_COLOR_BUFFER_BIT);
+
+
 		static bool dockspaceOpen = true;
 		static bool opt_fullscreen_persistant = true;
 		bool opt_fullscreen = opt_fullscreen_persistant;
@@ -86,7 +87,15 @@ public:
 			ImGui::DockSpace(dockspace_id, ImVec2(0.0f, 0.0f), dockspace_flags);
 		}
 		ImGui::Begin("Viewport");
-		ImGui::Image((void*)TCB, ImVec2(640, 360));
+		ImGui::Image((void*)TCB, ImVec2(1280 / 1.7f, 720 / 1.7f));
+		ImGui::End();
+
+		ImGui::Begin("Scene");
+		OSource::Sprite& r = OSource::Sprite(OSource::Texture(""), "");
+		for (auto i = sprites.begin(); i != sprites.end(); i++) {
+			r = **i;
+			ImGui::Button(r.GetName(), ImVec2(100, 20));
+		}
 		ImGui::End();
 		ImGui::End();
 	}

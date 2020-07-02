@@ -67,9 +67,10 @@ int main(){
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+    ImFont* pFont = io.Fonts->AddFontFromFileTTF("C:/Windows/Fonts/Arial.ttf", 16);
     ImGui::StyleColorsDark();
     ImGui_ImplGlfw_InitForOpenGL(window, true);
-    ImGui_ImplOpenGL3_Init("#version 330 core");
+    ImGui_ImplOpenGL3_Init(NULL);
 
     auto app = OSource::CreateApplication();
     app->Run();
