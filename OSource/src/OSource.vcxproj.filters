@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\InputManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -10,17 +13,39 @@
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OSource\Sprite.cpp" />
-    <ClCompile Include="OSource\Camera.cpp" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Entrypoint.h">
@@ -35,14 +60,39 @@
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OSource\Sprite.h" />
-    <ClInclude Include="OSource\Camera.h" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui_impl_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui_impl_opengl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\OSourceEngine\OSource\src\CMakeLists.txt" />

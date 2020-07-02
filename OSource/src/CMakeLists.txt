@@ -11,3 +11,4 @@ add_library(OSource STATIC
 
 target_include_directories(OSource PRIVATE ${PROJECT_SOURCE_DIR}/lib/spdlog/include)
 target_include_directories(OSource PRIVATE ${PROJECT_SOURCE_DIR}/lib/glm)
+target_include_directories(OSource PRIVATE ${PROJECT_SOURCE_DIR}/OSource/src)

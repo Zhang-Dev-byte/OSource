@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -95,10 +95,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -111,7 +111,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -128,10 +128,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -161,10 +161,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -177,7 +177,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -193,10 +193,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSourceEngine\lib\spdlog\include;C:\OSourceEngine\lib\glm;C:\OSourceEngine\OSource\src;C:\OSourceEngine\lib\glfw\include;C:\OSourceEngine\lib\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -264,10 +264,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OSource\Camera.cpp" />
-    <ClCompile Include="OSource\Sprite.cpp" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Application.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Camera.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Camera.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Entrypoint.h" />
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\InputManager.cpp" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\InputManager.h" />
@@ -275,11 +275,25 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Log.h" />
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Shader.cpp" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Shader.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Sprite.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Sprite.h" />
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Texture.cpp" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Texture.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\stb_image.h" />
-    <ClInclude Include="OSource\Camera.h" />
-    <ClInclude Include="OSource\Sprite.h" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imconfig.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_demo.cpp" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_draw.cpp" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_impl_glfw.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui_impl_glfw.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_impl_opengl3.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui_impl_opengl3.h" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imgui_internal.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_widgets.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_rectpack.h" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_textedit.h" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\OSourceEngine\ZERO_CHECK.vcxproj">
