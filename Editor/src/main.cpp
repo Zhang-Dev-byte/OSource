@@ -7,17 +7,9 @@ public:
 	virtual void Run() override{
         EditorGL::Genframebuffers();
 		s.SetRotation(45);
+		EditorGL::AddSprite(&s);
 	}
 	virtual void Render() override{
-        s.SetRotation(90);
-        EditorGL::Bindframebuffer();
-		glClearColor(1, 0, 0, 1);
-		glClear(GL_COLOR_BUFFER_BIT);
-		s.Render(camera);
-        EditorGL::Unbindframebuffer();
-        glClearColor(1, 0, 0, 1);
-        glClear(GL_COLOR_BUFFER_BIT);
-
 	}
 	virtual void HandleInput(OSource::Input& input) override{
 	}

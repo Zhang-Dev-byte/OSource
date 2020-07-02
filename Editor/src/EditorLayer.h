@@ -3,6 +3,7 @@
 unsigned int FBO, TCB, RBO;
 OSource::Camera camera = OSource::Camera(-1.6f, 1.6f, -0.9, 0.9);
 OSource::Timestep Timestep = OSource::Timestep();
+std::vector<OSource::Sprite*> sprites = std::vector<OSource::Sprite*>();
 float movementSpeed = 2.5f;
 namespace EditorGL {
 	extern void Genframebuffers() {
@@ -31,12 +32,27 @@ namespace EditorGL {
 	extern void Unbindframebuffer() {
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	}
+	extern void AddSprite(OSource::Sprite* sprite) {
+		sprites.push_back(sprite);
+	}
 }
 class LayerEditor : public OSource::Layer {
 public:
 	virtual void OnRun() override {
 	}
 	virtual void OnRender() override {
+		EditorGL::Bindframebuffer();
+		glClearColor(1, 0, 0, 1);
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		for (auto i = sprites.begin(); i != sprites.end(); i++) {
+			OSource::Sprite& r = **i;
+			r.Render(camera);
+		}
+
+		EditorGL::Unbindframebuffer();
+		glClearColor(1, 0, 0, 1);
+		glClear(GL_COLOR_BUFFER_BIT);
 		static bool dockspaceOpen = true;
 		static bool opt_fullscreen_persistant = true;
 		bool opt_fullscreen = opt_fullscreen_persistant;
