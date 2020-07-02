@@ -45,13 +45,13 @@ namespace OSource {
 
 	void Camera::Translate(vec2 value)
 	{
-		position += value;
+		position -= value;
 		Update();
 	}
 
 	void Camera::Rotate(float value)
 	{
-		rotation += value;
+		rotation -= value;
 		Update();
 	}
 

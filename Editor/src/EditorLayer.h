@@ -1,6 +1,9 @@
 #pragma once
 #include <OSource.h>
 unsigned int FBO, TCB, RBO;
+OSource::Camera camera = OSource::Camera(-1.6f, 1.6f, -0.9, 0.9);
+OSource::Timestep Timestep = OSource::Timestep();
+float movementSpeed = 2.5f;
 namespace EditorGL {
 	extern void Genframebuffers() {
 		glGenFramebuffers(1, &FBO);
@@ -72,6 +75,19 @@ public:
 		ImGui::End();
 	}
 	virtual void HandleInput(OSource::Input& input) override {
+		Timestep.Update();
+		if (input.GetKey(GLFW_KEY_W)) {
+			camera.Translate(vec2(0.0f, movementSpeed * Timestep.GetDeltatime()));
+		}
+		if (input.GetKey(GLFW_KEY_S)) {
+			camera.Translate(vec2(0.0f, -movementSpeed * Timestep.GetDeltatime()));
+		}
+		if (input.GetKey(GLFW_KEY_A)) {
+			camera.Translate(vec2(movementSpeed * Timestep.GetDeltatime(), 0.0f));
+		}
+		if (input.GetKey(GLFW_KEY_D)) {
+			camera.Translate(vec2(-movementSpeed * Timestep.GetDeltatime(), 0.0f));
+		}
 	}
 };
 
