@@ -12,6 +12,7 @@
 
 namespace OSource{
     extern Application* CreateApplication();
+    extern void OnLayersCreate();
     extern std::vector<Layer*> layers = std::vector<Layer*>();
     extern void AddLayer(Layer* layer) {
         layers.push_back(layer);
@@ -60,6 +61,7 @@ int main(){
         OS_CORE_ERROR("Failed to initialize GLAD!");
         return -1;
     }
+    OSource::OnLayersCreate();
 
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();

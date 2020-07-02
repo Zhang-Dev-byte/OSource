@@ -6,8 +6,6 @@ public:
 	OSource::Camera cam = OSource::Camera(-1.6f, 1.6f, -0.9, 0.9);
 	OSource::Sprite s = OSource::Sprite(OSource::Texture("res/image.png"), "Hello");
 	virtual void Run() override{
-		OSource::Layer* l = new LayerSandbox();
-		OSource::AddLayer(l);
 		s.SetRotation(45);
 	}
 	virtual void Render() override{
