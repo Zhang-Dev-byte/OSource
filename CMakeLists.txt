@@ -29,3 +29,5 @@ target_include_directories(Sandbox PRIVATE ${PROJECT_SOURCE_DIR}/OSource/src)
 
 target_include_directories(Sandbox PRIVATE ${PROJECT_SOURCE_DIR}/lib/spdlog/include)
 
+target_include_directories(Sandbox PRIVATE ${PROJECT_SOURCE_DIR}/lib/glm)
+

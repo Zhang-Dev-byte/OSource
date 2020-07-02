@@ -9,6 +9,9 @@ void OSource::Shader::SetInt(const std::string &name, int value) const {
 void OSource::Shader::SetBool(const std::string &name, bool value) const {
     glUniform1i(glGetUniformLocation(ID, name.c_str()), (int)value); 
 }
+void OSource::Shader::SetMatrix4f(const std::string& name, mat4& value) const {
+    glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, glm::value_ptr(value));
+}
 void OSource::Shader::Use(){
     glUseProgram(ID); 
 }

@@ -15,8 +15,6 @@ void ResizeCallback(GLFWwindow* window, int width, int height){
 int main(){
     OSource::Log::Init();
     OS_CORE_INFO("Initalized Log!");
-    auto app = OSource::CreateApplication();
-    app->Run();
 
 
     if(!glfwInit()){
@@ -41,6 +39,9 @@ int main(){
         OS_CORE_ERROR("Failed to initialize GLAD!");
         return -1;
     }
+    auto app = OSource::CreateApplication();
+    app->Run();
+
     glEnable(GL_TEXTURE_2D);
 
     glEnable(GL_BLEND);

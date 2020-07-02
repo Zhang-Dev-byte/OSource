@@ -5,6 +5,10 @@
 #include <fstream>
 #include <sstream>
 #include "Log.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+using namespace glm;
 
 namespace OSource{
     class Shader
@@ -24,6 +28,8 @@ namespace OSource{
         void SetInt(const std::string &name, int value) const;
         // ------------------------------------------------------------------------
         void SetFloat(const std::string &name, float value) const;
+        
+        void SetMatrix4f(const std::string& name, mat4& value) const;
 
     private:
         // utility function for checking shader compilation/linking errors.

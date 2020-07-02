@@ -10,6 +10,7 @@
 *.rsp
 *.marks
 *.bin
+*.vs
 
 #CMake
 

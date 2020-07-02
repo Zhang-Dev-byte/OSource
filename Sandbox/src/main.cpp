@@ -2,11 +2,14 @@
 
 class Sandbox : public OSource::Application{
 public:
+	OSource::Sprite s = OSource::Sprite(OSource::Texture("res/image.png"), "Hello");
 	virtual void Run() override{
+		s.SetRotation(45);
 	}
 	virtual void Render() override{
-		OSource::Shader shader = OSource::Shader("res/vs.glsl", "res/fs.glsl");
+		/*OSource::Shader shader = OSource::Shader("res/vs.glsl", "res/fs.glsl");
 		OSource::Texture tex = OSource::Texture("res/image.png");
+		mat4 model = mat4(1.0f);
 		
 		float vertices[] = {
 			0.5f,  0.5f, 0.0f,
@@ -53,9 +56,11 @@ public:
 		glBindVertexArray(VAO);
 		shader.Use();
 		shader.SetInt("t", tex.getID());
+		shader.SetMatrix4f("model", model);
         
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);*/
+		s.Render();
 	}
 	virtual void HandleInput(OSource::Input& input) override{
 	}

@@ -1,7 +1,7 @@
-prefix=C:/Program Files (x86)/OSource
+prefix=C:/Program Files (x86)/Sandbox
 exec_prefix=${prefix}
-includedir=C:/Program Files (x86)/OSource/include
-libdir=C:/Program Files (x86)/OSource/lib
+includedir=C:/Program Files (x86)/Sandbox/include
+libdir=C:/Program Files (x86)/Sandbox/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input
