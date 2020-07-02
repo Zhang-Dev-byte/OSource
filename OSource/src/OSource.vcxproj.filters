@@ -19,6 +19,9 @@
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Timestep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\OSourceEngine\OSource\src\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,7 +40,6 @@
     <ClCompile Include="C:\OSourceEngine\OSource\src\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OSource\Timestep.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource.h">
@@ -70,6 +72,9 @@
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Timestep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -97,7 +102,6 @@
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OSource\Timestep.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\OSourceEngine\OSource\src\CMakeLists.txt" />

@@ -264,7 +264,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OSource\Timestep.cpp" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Application.h" />
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Camera.cpp" />
@@ -281,6 +280,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Sprite.h" />
     <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Texture.cpp" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Texture.h" />
+    <ClCompile Include="C:\OSourceEngine\OSource\src\OSource\Timestep.cpp" />
+    <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\Timestep.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\OSource\stb_image.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\imconfig.h" />
     <ClCompile Include="C:\OSourceEngine\OSource\src\imgui.cpp" />
@@ -296,7 +297,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_rectpack.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_textedit.h" />
     <ClInclude Include="C:\OSourceEngine\OSource\src\imstb_truetype.h" />
-    <ClInclude Include="OSource\Timestep.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\OSourceEngine\ZERO_CHECK.vcxproj">
