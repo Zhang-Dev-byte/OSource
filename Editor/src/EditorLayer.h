@@ -1,8 +1,16 @@
 #pragma once
 #include <OSource.h>
+#include <iostream>
+#include <algorithm>
+#include <sstream>
+#include <iostream>
+#include <iterator>
+#include <iomanip>
+
 unsigned int FBO, TCB, RBO;
 OSource::Camera camera = OSource::Camera(-1.6f, 1.6f, -0.9, 0.9);
 OSource::Timestep Timestep = OSource::Timestep();
+std::string jsondir = "Info/js/ObjectNotation/Json/Serialized";
 std::vector<OSource::Sprite*> sprites = std::vector<OSource::Sprite*>();
 float movementSpeed = 2.5f;
 namespace EditorGL {
@@ -34,10 +42,46 @@ namespace EditorGL {
 	extern void AddSprite(OSource::Sprite* sprite) {
 		sprites.push_back(sprite);
 	}
+	extern std::string StringToHex(const std::string& in) {
+		std::stringstream ss;
+
+		ss << std::hex << std::setfill('0');
+		for (size_t i = 0; in.length() > i; ++i) {
+			ss << std::setw(2) << static_cast<unsigned int>(static_cast<unsigned char>(in[i]));
+		}
+
+		return ss.str();
+	}
+
+	extern std::string HexToString(const std::string& in) {
+		std::string output;
+
+		if ((in.length() % 2) != 0) {
+			throw std::runtime_error("Invalid string length...");
+		}
+
+		size_t cnt = in.length() / 2;
+
+		for (size_t i = 0; cnt > i; ++i) {
+			uint32_t s = 0;
+			std::stringstream ss;
+			ss << std::hex << in.substr(i * 2, 2);
+			ss >> s;
+
+			output.push_back(static_cast<unsigned char>(s));
+		}
+
+		return output;
+	}
 }
 class LayerEditor : public OSource::Layer {
 public:
+	OSource::Sprite& ssprite = OSource::Sprite(OSource::Texture(""), "");
+	float spos[2];
+	float sscale[2];
+	float srot;
 	virtual void OnRun() override {
+		std::cout << EditorGL::HexToString(EditorGL::StringToHex("hello")) << std::endl;
 	}
 	virtual void OnRender() override {
 		EditorGL::Bindframebuffer();
@@ -94,9 +138,52 @@ public:
 		OSource::Sprite& r = OSource::Sprite(OSource::Texture(""), "");
 		for (auto i = sprites.begin(); i != sprites.end(); i++) {
 			r = **i;
-			ImGui::Button(r.GetName(), ImVec2(100, 20));
+			if(ImGui::Button(r.GetName(), ImVec2(100, 20))){
+				ssprite = r;
+				spos[0] = ssprite.GetPosition().x;
+				spos[1] = ssprite.GetPosition().y;
+
+				sscale[0] = ssprite.GetScale().x;
+				sscale[1] = ssprite.GetScale().y;
+
+				srot = ssprite.GetRotation();
+			}
 		}
 		ImGui::End();
+
+		ImGui::Begin("Properties");
+		ImGui::Text(ssprite.GetName());
+		ImGui::InputFloat2("Position", spos);
+		ImGui::InputFloat2("Scale", sscale);
+		ImGui::InputFloat("Rotation", &srot);
+		if(ImGui::Button("Delete", ImVec2(100, 20))) {
+			for (int i = 0; i < sprites.size(); i++) {
+				OSource::Sprite* p = sprites[i];
+				OSource::Sprite& r = *p;
+				if (r.GetName() == ssprite.GetName()) {
+					sprites.erase(sprites.begin() + i);
+					ssprite = OSource::Sprite(OSource::Texture(""), "");
+
+					spos[0] = 0;
+					spos[1] = 0;
+
+					sscale[0] = 0;
+					sscale[1] = 0;
+
+					srot = 0;
+				}
+			}
+		}
+		ImGui::End();
+		ssprite.SetPosition(vec2(spos[0], spos[1]));
+		ssprite.SetScale(vec2(sscale[0], sscale[1]));
+		ssprite.SetRotation(srot);
+		for (auto i = sprites.begin(); i != sprites.end(); i++) {
+			OSource::Sprite& r = **i;
+			if (r.GetName() == ssprite.GetName()) {
+				r = ssprite;
+			}
+		}
 		ImGui::End();
 	}
 	virtual void HandleInput(OSource::Input& input) override {
